@@ -1,0 +1,7 @@
+{
+  "name": "bambara",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
