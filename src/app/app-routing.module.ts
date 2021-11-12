@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'panneaux',
+    loadChildren: () => import('./panneaux/panneaux.module').then( m => m.PanneauxPageModule)
+  },
 ];
 
 @NgModule({
