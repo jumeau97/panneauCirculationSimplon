@@ -8,9 +8,22 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'accueil',
     pathMatch: 'full'
   },
+  {
+    path: 'detail-panneaux',
+    loadChildren: () => import('./detail-panneaux/detail-panneaux.module').then( m => m.DetailPanneauxPageModule)
+  },
+  {
+    path: 'accueil',
+    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
+  },  {
+    path: 'detail-panneaux2',
+    loadChildren: () => import('./detail-panneaux2/detail-panneaux2.module').then( m => m.DetailPanneaux2PageModule)
+  },
+
+
 ];
 
 @NgModule({

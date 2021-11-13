@@ -1,0 +1,28 @@
+
+ion-content{
+    --background: url('/assets/images/bg_accueil.jpg') no-repeat center/cover fixed;
+}
+.img-logo{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:50px;
+  margin-bottom:30px;
+  width: 200px;
+  height: 100%;
+}
+.apprebtn, .joubtn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-align: center;
+}
+.audiobtn{
+  --background:transparent;
+  --opacity:0;
+}
+
+ion-item{
+    --background: none;
+}

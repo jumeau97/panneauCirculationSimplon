@@ -1,0 +1,39 @@
+<ion-content class="ion-text-center">
+
+  <ion-title><b>{{panneau.libelle}}</b></ion-title>
+
+  <ion-slides  [options]='slideOpts'>
+    <ion-slide *ngFor="let sous of listePanneauxParCategorie; let index = index">
+      <div class="contenair">
+        <img src="{{sous.image}}" alt="" >
+        <details >
+          <summary>{{sous.nom}}</summary>
+          <p>{{sous.description}}</p>
+        </details>
+        <ion-item>
+            <audio src="assets/audio/A13a.ogg" controls></audio>
+        </ion-item>
+    </div> 
+    </ion-slide>
+  </ion-slides> 
+
+ <ion-grid class="ion-margin">
+        <ion-row>
+          <ion-col size="large" size="4" *ngFor="let panneaux of panneaux">
+            <div *ngIf="panneaux.libelle === panneau.libelle">
+              <a>
+              <ion-img class="taille-image image-floue" src="{{ panneaux.image }}" disabled="disabled"></ion-img>
+              <ion-label style="color: white; font-size: small;">{{panneaux.libelle}}</ion-label>
+             </a>
+            </div>
+            <div *ngIf="panneaux.libelle !== panneau.libelle">
+              <a (click)="showConfirm(panneaux)">
+              <ion-img class="taille-image" src="{{ panneaux.image }}" disabled="disabled"></ion-img>
+              <ion-label style="color: white; font-size: small;">{{panneaux.libelle}}</ion-label>
+             </a>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>
+
