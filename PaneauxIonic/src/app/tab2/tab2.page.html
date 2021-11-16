@@ -1,0 +1,25 @@
+<ion-content  [fullscreen]="true">
+  <ion-slides #sliders (ionSlidesDidLoad)= 'slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+    <ion-slide >
+      <img src="./assets/b.png" alt="#" class="logo">
+    </ion-slide>
+    <ion-slide >
+      <img src="./assets/s2.png" alt="#" class="logo">
+    </ion-slide>
+  </ion-slides>
+  <h6 style="text-align: center;"><b>Panneaux de circulation</b></h6>
+  <div class="flex">
+    <ion-card class="ion-text-center">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="large" size="6" *ngFor="let panneau of panneaux">
+            <a (click)="showConfirm(panneau)" style="text-align: center">
+              <ion-img class="imgC" src="{{ panneau.image }}"></ion-img>
+              <ion-card-subtitle style="color: white; font-size: 10px; text-align: center;">{{panneau.libelle}}</ion-card-subtitle>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+</ion-content>

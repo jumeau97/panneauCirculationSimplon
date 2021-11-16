@@ -1,0 +1,31 @@
+* {
+    --background: linear-gradient(#ffffff, #F9A732);
+  }
+  .img-logo {
+   
+  }
+  .h5 {
+   
+  }
+  
+  .titre{
+   display: flex;
+   flex-direction: column;
+   padding: auto;
+  }
+  
+  audio {
+    width: 200px;
+    height: 40px;
+    margin: 0 ;
+  }
+  ion-col img{
+      width: 20%;
+  }
+  ion-grid{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+  }

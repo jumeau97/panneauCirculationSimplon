@@ -1,0 +1,9 @@
+<ion-content class="hauteur">
+  <ion-row class="ion-padding">
+    <ion-label><p><b>{{panneauPopup.libelle}}</b></p></ion-label>
+    <ion-img class="taille-image" src= {{panneauPopup.image}}></ion-img>
+    <audio src={{panneauPopup.audio}} controls autoplay></audio>
+    <ion-button color="danger" (click)="retour()"><ion-icon name="close"></ion-icon></ion-button>
+    <ion-button color="success" (click)="detailPanneau(panneauPopup)"><ion-icon name="arrow-forward"></ion-icon></ion-button>
+  </ion-row>
+</ion-content>

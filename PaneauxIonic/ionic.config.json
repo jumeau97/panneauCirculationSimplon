@@ -1,0 +1,8 @@
+{
+  "name": "Panneax",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

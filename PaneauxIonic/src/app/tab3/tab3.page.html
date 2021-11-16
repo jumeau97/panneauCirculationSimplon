@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true" >
+  <ion-header col class="img-logo">
+      <img src="assets/assets/OJK6.gif">
+  </ion-header>
+  <ion-grid>
+    <ion-row id="container" class="ion-padding">
+        <div *ngIf="quizChoice" class="titre">
+            <strong>Votre score est de :<i color='danger'></i> XP</strong>
+            <h5 id="h">Choisissez la bonne image</h5>
+            <audio src="{{quizChoice.question}}" controls ></audio>
+        </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

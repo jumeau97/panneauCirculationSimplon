@@ -1,0 +1,44 @@
+ion-toolbar{
+    --background: #DEE4E2;
+}
+ion-content{
+    --background: linear-gradient(#FFF, #F9A732);
+}
+ion-slide img{
+    width: 90%;
+}
+ion-slide{
+    border: none;
+    background: none;
+}
+.contenair{
+    width:80%;
+    margin-left: 17%;
+}
+.contenair img{
+    width: 70%;
+   
+}
+.contenair audio{
+    width: 120px;
+    margin: 10px auto;
+}
+ion-grid{
+    background-color: #F9A732;
+    width: 98%;
+    display: block;
+    border: 1px #F9A732 ;
+    border-radius: 10%;
+}
+ion-col p{
+    color: white;
+}
+.taille-image{
+    height: 40px;
+}
+.image-floue {
+    filter: blur(5px);
+}
+ion-item{
+    --background:none;
+}
